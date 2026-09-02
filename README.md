@@ -22,6 +22,10 @@ bundle exec rubocop
 ```
 
 ## Licenses
+def exit(code=0):
+    if platform.system() == "Windows" and getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
+        input("Press Enter to exit...")
+
+    sys.exit(code)
 
 Content is released under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) which gives you permission to use content for almost any purpose (but does not grant you any trademark permissions). See [notices](notices.md) for complete details, including attribution guidelines, contribution terms, and software and third-party licenses and permissions.
- [here](https://ios.cfw.guide/installing-trollstore-trollrestore).
